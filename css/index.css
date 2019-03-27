@@ -142,11 +142,18 @@ html {
   margin: 0 auto;
   font-size: 1.6rem;
 }
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  color: royalblue;
+}
 header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 4rem;
+  margin-top: 3rem;
 }
 header h1 {
   font-size: 4rem;
@@ -154,8 +161,8 @@ header h1 {
 header nav {
   display: flex;
   justify-content: space-around;
-  width: 80%;
-  padding: 20px 0;
+  width: 96%;
+  padding: 2rem 0;
   border-bottom: 3px solid black;
 }
 header nav a {
@@ -169,4 +176,47 @@ header nav a:hover {
 }
 header nav a:first-child {
   border-left: none;
+}
+.contact-info {
+  display: flex;
+  justify-content: center;
+  margin: 0.3rem 0;
+}
+.main-content {
+  display: flex;
+  flex-direction: column;
+  margin: 0 2%;
+  margin-top: 1rem;
+}
+.main-content h2 {
+  font-size: 2rem;
+  margin: 1.5rem 0;
+  text-align: center;
+  width: 100;
+  border-bottom: 2px solid black;
+}
+.main-content h3,
+.main-content p,
+.main-content li {
+  font-size: 1.8rem;
+}
+.main-content .sec {
+  margin-bottom: 2rem;
+}
+.main-content .skills .list {
+  display: flex;
+  justify-content: center;
+}
+.main-content .skills .list ul {
+  margin: 0 10%;
+  list-style-type: circle;
+}
+.main-content .education .edu1 {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.main-content .education .edu2 {
+  display: flex;
+  justify-content: space-between;
 }
