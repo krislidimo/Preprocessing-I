@@ -68,34 +68,40 @@ html {
 @main-font: 'Playfair Display', serif;
 @second-font: 'Playfair Display', serif;
 
-h1 {
+//Mixins
+.headers() {
 	color: @font-color;
 	font-family: @main-font;
+}
+
+.content() {
+	color: @font-color;
+	font-family: @second-font;
+}
+
+h1 {
+	.headers();
 	font-size: 6rem;
 }
 
 h2 {
-	color: @font-color;
-	font-family: @main-font;
+	.headers();
 	font-size: 4rem;
 }
 
 h3 {
-	color: @font-color;
-	font-family: @main-font;
+	.headers();
 	font-size: 3rem;
 }
 
 p, li {
-	color: @font-color;
-	font-family: @second-font;
+	.content();
 	font-size:  @2nd-font-size;
 }
 
 a {
-	color: @font-color;
+	.content();
 	text-decoration: none;
-	font-family: @second-font;
 
 	&:hover {
 		color: @link-color;

@@ -160,8 +160,8 @@ li {
 }
 a {
   color: #39393A;
-  text-decoration: none;
   font-family: 'Playfair Display', serif;
+  text-decoration: none;
 }
 a:hover {
   color: royalblue;
