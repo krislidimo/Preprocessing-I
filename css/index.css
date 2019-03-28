@@ -138,21 +138,26 @@ html {
   font-size: 62.5%;
 }
 h1 {
+  font-family: 'Playfair Display', serif;
   font-size: 6rem;
 }
 h2 {
+  font-family: 'Playfair Display', serif;
   font-size: 4rem;
 }
 h3 {
+  font-family: 'Playfair Display', serif;
   font-size: 3rem;
 }
 p,
 li {
+  font-family: 'Playfair Display', serif;
   font-size: 2.2rem;
 }
 a {
   text-decoration: none;
   color: black;
+  font-family: 'Playfair Display', serif;
 }
 a:hover {
   color: royalblue;
@@ -177,6 +182,7 @@ header nav {
 }
 header nav a {
   text-decoration: none;
+  font-size: 1.8rem;
   color: black;
   padding: 0 10%;
   border-left: 1px solid black;
@@ -195,11 +201,24 @@ header nav a:first-child {
 .contact-info p {
   margin: 0 1%;
 }
+.contact-info a {
+  padding: 0 1%;
+  border-left: 1px solid black;
+}
+.contact-info a:first-child {
+  border-left: none;
+}
+@media (max-width: 550px) {
+  .contact-info a {
+    font-size: 1.4rem;
+  }
+}
 .banner {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 25px;
+  margin-top: 20px;
+  margin-bottom: 50px;
 }
 .banner .left-pane {
   display: flex;
@@ -208,21 +227,64 @@ header nav a:first-child {
   padding-right: 3%;
   width: 40%;
 }
+.banner .left-pane h2 {
+  margin-bottom: 1.2rem;
+  border-bottom: 2px solid black;
+  line-height: 0.9;
+}
 .banner .left-pane ul {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
 }
-.banner img {
+@media (max-width: 1000px) {
+}
+@media (max-width: 800px) {
+  .banner .left-pane {
+    display: none;
+  }
+}
+.banner .profile-picture {
   width: 18%;
   height: auto;
   border-radius: 10px;
+}
+@media (max-width: 800px) {
+  .banner .profile-picture {
+    display: none;
+  }
+}
+.banner .profile-picture-mobile {
+  width: 90%;
+  height: auto;
+  border-radius: 10px;
+  display: none;
+}
+@media (max-width: 800px) {
+  .banner .profile-picture-mobile {
+    display: flex;
+  }
 }
 .banner .right-pane {
   display: flex;
   justify-content: flex-start;
   padding-left: 3%;
   width: 40%;
+}
+@media (max-width: 1000px) {
+  .banner .right-pane li {
+    font-size: 1.7rem;
+  }
+}
+@media (max-width: 800px) {
+  .banner .right-pane {
+    display: none;
+  }
+}
+@media (max-width: 1000px) {
+  .banner {
+    font-size: 0.5rem;
+  }
 }
 .main-content {
   display: flex;
@@ -239,6 +301,9 @@ header nav a:first-child {
 .main-content .sec {
   margin-bottom: 2rem;
 }
+.main-content .intro p {
+  padding: 0 1%;
+}
 .main-content .skills .list {
   display: flex;
   justify-content: center;
@@ -247,16 +312,29 @@ header nav a:first-child {
   margin: 0 10%;
   list-style-type: circle;
 }
+.main-content .education {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-content .education h3 {
+  width: 85%;
+}
 .main-content .education .edu1 {
   display: flex;
   justify-content: space-between;
   font-weight: bold;
+  width: 75%;
   margin-bottom: 20px;
 }
 .main-content .education .edu2 {
   display: flex;
   justify-content: space-between;
   font-weight: bold;
+  width: 60%;
+}
+.main-content .education .edu2-sub {
+  width: 51%;
 }
 .main-content .contact {
   display: flex;

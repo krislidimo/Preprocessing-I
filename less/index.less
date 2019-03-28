@@ -58,36 +58,43 @@ html, body {
 }
 
 html {
-	font-size: 62.5%
+	font-size: 62.5%;
 }
 
+//Variables
+@link-color: royalblue;
+@main-font: 'Playfair Display', serif;
+@second-fond: 'Playfair Display', serif;
+
 h1 {
+	font-family: @main-font;
 	font-size: 6rem;
 }
 
 h2 {
+	font-family: @main-font;
 	font-size: 4rem;
 }
 
 h3 {
+	font-family: @main-font;
 	font-size: 3rem;
 }
 
 p, li {
-		font-size:  2.2rem
+	font-family: @second-fond;
+	font-size:  2.2rem
 }
 
 a {
 		text-decoration: none;
 		color: black;
+		font-family: @second-fond;
 
 		&:hover {
 			color: @link-color;
 		}
 	}
-
-//Variables
-@link-color: royalblue;
 
 .container {
 	max-width: 1200px;
@@ -110,6 +117,7 @@ header {
 
 		a {
 			text-decoration: none;
+			font-size: 1.8rem;
 			color: black;
 			padding: 0 10%;
 			border-left: 1px solid black;
@@ -132,13 +140,30 @@ header {
 	p {
 		margin: 0 1%;
 	}
+
+	a {
+		padding: 0 1%;
+		border-left: 1px solid black;
+
+		&:first-child {
+			border-left: none;
+		}
+	}
+
+	@media (max-width: 550px) {
+		a {
+			font-size: 1.4rem;
+		}
+	}
+
 }
 
 .banner {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin-top: 25px;
+	margin-top: 20px;
+	margin-bottom: 50px;
 
 	.left-pane {
 		display: flex;
@@ -147,18 +172,64 @@ header {
 		padding-right: 3%;
 		width: 40%;
 
+		h2 {
+			margin-bottom: 1.2rem;
+			border-bottom: 2px solid black;
+			line-height: .9; 
+		}
 		ul {
 			display: flex;
 			flex-direction: column;
 			align-items: flex-end;
 		}
 
+		@media (max-width: 1000px) {
+			// li {
+			// 	font-size: 1.7rem;
+			// }
+		}
+
+		@media (max-width: 800px) {
+			display:none;
+		}
+
 	}
 
-	img {
+	.profile-picture {
 		width: 18%;
 		height: auto;
 		border-radius: 10px;
+
+		@media(max-width: 1000px) {
+		
+		}
+
+		@media(max-width: 800px) {
+			display: none;
+		}
+
+		@media(max-width: 500px) {
+			
+		}
+	}
+
+	.profile-picture-mobile {
+		width: 90%;
+		height: auto;
+		border-radius: 10px;
+		display: none;
+
+		@media(max-width: 1000px) {
+
+		}
+
+		@media(max-width: 800px) {
+			display: flex;
+		}
+
+		@media(max-width: 500px) {
+			
+		}
 	}
 
 	.right-pane {
@@ -166,7 +237,21 @@ header {
 		justify-content: flex-start;
 		padding-left: 3%;
 		width: 40%;
+
+		@media (max-width: 1000px) {
+			li {
+				font-size: 1.7rem;
+			}
+		}
+
+		@media (max-width: 800px) {
+			display: none;
+		}
 	}
+
+	@media (max-width: 1000px) {
+			font-size: .5rem;
+		}
 }
 
 .main-content {
@@ -187,7 +272,10 @@ header {
 	}
 
 	.intro {
-		
+
+		p {
+			padding: 0 1%;
+		}
 	}
 
 	.skills {
@@ -208,16 +296,31 @@ header {
 	}
 
 	.education {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		h3 {
+			width: 85%;
+		}
 		.edu1 {
 			display: flex;
 			justify-content: space-between;
 			font-weight: bold;
+			width: 75%;
 			margin-bottom: 20px;
 		}
 		.edu2 {
 			display: flex;
 			justify-content: space-between;
 			font-weight: bold;
+			width: 60%;
+
+		}
+
+		.edu2-sub {
+			width: 51%;
+
+
 		}
 	}
 
