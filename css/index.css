@@ -1,1 +1,359 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+html {
+  font-size: 62.5%;
+}
+h1 {
+  color: #39393A;
+  font-family: 'Playfair Display', serif;
+  font-size: 6rem;
+}
+h2 {
+  color: #39393A;
+  font-family: 'Playfair Display', serif;
+  font-size: 4rem;
+}
+h3 {
+  color: #39393A;
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+}
+p,
+li {
+  color: #39393A;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+}
+a {
+  color: #39393A;
+  font-family: 'Playfair Display', serif;
+  text-decoration: none;
+}
+a:hover {
+  color: royalblue;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  font-size: 1.6rem;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3rem;
+}
+header nav {
+  display: flex;
+  justify-content: space-around;
+  width: 96%;
+  padding: 2rem 0;
+  border-bottom: 3px solid black;
+}
+header nav a {
+  text-decoration: none;
+  font-size: 1.8rem;
+  color: black;
+  padding: 0 10%;
+  border-left: 1px solid black;
+}
+header nav a:hover {
+  color: royalblue;
+}
+header nav a:first-child {
+  border-left: none;
+}
+.contact-info {
+  display: flex;
+  justify-content: center;
+  margin: 0.3rem 0;
+}
+.contact-info p {
+  margin: 0 1%;
+}
+.contact-info a {
+  padding: 0 1%;
+  border-left: 1px solid black;
+}
+.contact-info a:first-child {
+  border-left: none;
+  padding-left: none;
+}
+.contact-info a:last-child {
+  paddingright: none;
+}
+@media (max-width: 550px) {
+  .contact-info a {
+    font-size: 1.4rem;
+  }
+}
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+.banner .left-pane {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-right: 3%;
+  width: 40%;
+}
+.banner .left-pane h2 {
+  margin-bottom: 1.2rem;
+  border-bottom: 2px solid black;
+  line-height: 0.9;
+}
+.banner .left-pane ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+@media (max-width: 1000px) {
+}
+@media (max-width: 800px) {
+  .banner .left-pane {
+    display: none;
+  }
+}
+.banner .profile-picture {
+  width: 18%;
+  height: auto;
+  border-radius: 10px;
+}
+@media (max-width: 800px) {
+  .banner .profile-picture {
+    display: none;
+  }
+}
+.banner .profile-picture-mobile {
+  width: 90%;
+  height: auto;
+  border-radius: 10px;
+  display: none;
+}
+@media (max-width: 800px) {
+  .banner .profile-picture-mobile {
+    display: flex;
+  }
+}
+.banner .right-pane {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 3%;
+  width: 40%;
+}
+@media (max-width: 1000px) {
+  .banner .right-pane li {
+    font-size: 1.7rem;
+  }
+}
+@media (max-width: 800px) {
+  .banner .right-pane {
+    display: none;
+  }
+}
+@media (max-width: 1000px) {
+  .banner {
+    font-size: 0.5rem;
+  }
+}
+.main-content {
+  display: flex;
+  flex-direction: column;
+  margin: 0 2%;
+  margin-top: 1rem;
+}
+.main-content h3 {
+  margin: 1.5rem 0;
+  text-align: center;
+  width: 100;
+  border-bottom: 2px solid black;
+}
+.main-content .sec {
+  margin-bottom: 2rem;
+}
+.main-content .intro p {
+  padding: 0 1%;
+}
+.main-content .skills {
+  display: none;
+}
+.main-content .skills .list {
+  display: flex;
+  justify-content: center;
+}
+.main-content .skills .list ul {
+  margin: 0 10%;
+  list-style-type: circle;
+}
+@media (max-width: 800px) {
+  .main-content .skills {
+    display: block;
+  }
+}
+.main-content .education {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-content .education h3 {
+  width: 85%;
+}
+.main-content .education .edu1 {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  width: 75%;
+  margin-bottom: 20px;
+}
+.main-content .education .edu2 {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  width: 60%;
+}
+.main-content .education .edu2-sub {
+  width: 51%;
+}
+.main-content .contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
