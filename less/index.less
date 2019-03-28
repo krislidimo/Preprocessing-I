@@ -279,6 +279,7 @@ header {
 	}
 
 	.skills {
+		display: none;
 		.list {
 			display: flex;
 			justify-content: center;
@@ -289,6 +290,11 @@ header {
 				list-style-type: circle;
 			}
 		}
+
+		@media (max-width: 800px) {
+			display: block;
+		}	
+
 	}
 
 	.work-history {
