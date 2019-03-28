@@ -61,14 +61,20 @@ html {
 	font-size: 62.5%
 }
 
+h1 {
+	font-size: 6rem;
+}
 
-//Variables
-@link-color: royalblue;
+h2 {
+	font-size: 4rem;
+}
 
-.container {
-	max-width: 1200px;
-	margin: 0 auto;
-	font-size: 1.6rem;
+h3 {
+	font-size: 3rem;
+}
+
+p, li {
+		font-size:  2.2rem
 }
 
 a {
@@ -80,16 +86,20 @@ a {
 		}
 	}
 
+//Variables
+@link-color: royalblue;
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	font-size: 1.6rem;
+}
+
 header {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	margin-top: 3rem;
-
-
-	h1 {
-		font-size: 4rem;
-	}
 
 	nav {
 		display: flex;
@@ -118,6 +128,45 @@ header {
 	display: flex;
 	justify-content: center;
 	margin: .3rem 0;
+
+	p {
+		margin: 0 1%;
+	}
+}
+
+.banner {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 25px;
+
+	.left-pane {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		padding-right: 3%;
+		width: 40%;
+
+		ul {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-end;
+		}
+
+	}
+
+	img {
+		width: 18%;
+		height: auto;
+		border-radius: 10px;
+	}
+
+	.right-pane {
+		display: flex;
+		justify-content: flex-start;
+		padding-left: 3%;
+		width: 40%;
+	}
 }
 
 .main-content {
@@ -126,16 +175,11 @@ header {
 	margin: 0 2%;
 	margin-top: 1rem;
 
-	h2 {
-		font-size: 2rem;
+	h3 {
 		margin: 1.5rem 0;
 		text-align: center;
 		width: 100;
 		border-bottom: 2px solid black;
-	}
-
-	h3, p, li {
-		font-size:  1.8rem
 	}
 
 	.sec {
@@ -143,7 +187,7 @@ header {
 	}
 
 	.intro {
-
+		
 	}
 
 	.skills {
@@ -167,15 +211,19 @@ header {
 		.edu1 {
 			display: flex;
 			justify-content: space-between;
+			font-weight: bold;
 			margin-bottom: 20px;
 		}
 		.edu2 {
 			display: flex;
 			justify-content: space-between;
+			font-weight: bold;
 		}
 	}
 
 	.contact {
-
+		display: flex;
+		flex-direction: column;
+		align-items: center; 
 	}
 }

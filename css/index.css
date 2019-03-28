@@ -137,10 +137,18 @@ body {
 html {
   font-size: 62.5%;
 }
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  font-size: 1.6rem;
+h1 {
+  font-size: 6rem;
+}
+h2 {
+  font-size: 4rem;
+}
+h3 {
+  font-size: 3rem;
+}
+p,
+li {
+  font-size: 2.2rem;
 }
 a {
   text-decoration: none;
@@ -149,14 +157,16 @@ a {
 a:hover {
   color: royalblue;
 }
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  font-size: 1.6rem;
+}
 header {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 3rem;
-}
-header h1 {
-  font-size: 4rem;
 }
 header nav {
   display: flex;
@@ -182,23 +192,49 @@ header nav a:first-child {
   justify-content: center;
   margin: 0.3rem 0;
 }
+.contact-info p {
+  margin: 0 1%;
+}
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+}
+.banner .left-pane {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-right: 3%;
+  width: 40%;
+}
+.banner .left-pane ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.banner img {
+  width: 18%;
+  height: auto;
+  border-radius: 10px;
+}
+.banner .right-pane {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 3%;
+  width: 40%;
+}
 .main-content {
   display: flex;
   flex-direction: column;
   margin: 0 2%;
   margin-top: 1rem;
 }
-.main-content h2 {
-  font-size: 2rem;
+.main-content h3 {
   margin: 1.5rem 0;
   text-align: center;
   width: 100;
   border-bottom: 2px solid black;
-}
-.main-content h3,
-.main-content p,
-.main-content li {
-  font-size: 1.8rem;
 }
 .main-content .sec {
   margin-bottom: 2rem;
@@ -214,9 +250,16 @@ header nav a:first-child {
 .main-content .education .edu1 {
   display: flex;
   justify-content: space-between;
+  font-weight: bold;
   margin-bottom: 20px;
 }
 .main-content .education .edu2 {
   display: flex;
   justify-content: space-between;
+  font-weight: bold;
+}
+.main-content .contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
