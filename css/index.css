@@ -138,25 +138,29 @@ html {
   font-size: 62.5%;
 }
 h1 {
+  color: #39393A;
   font-family: 'Playfair Display', serif;
   font-size: 6rem;
 }
 h2 {
+  color: #39393A;
   font-family: 'Playfair Display', serif;
   font-size: 4rem;
 }
 h3 {
+  color: #39393A;
   font-family: 'Playfair Display', serif;
   font-size: 3rem;
 }
 p,
 li {
+  color: #39393A;
   font-family: 'Playfair Display', serif;
-  font-size: 2.2rem;
+  font-size: 1.8rem;
 }
 a {
+  color: #39393A;
   text-decoration: none;
-  color: black;
   font-family: 'Playfair Display', serif;
 }
 a:hover {
@@ -207,6 +211,10 @@ header nav a:first-child {
 }
 .contact-info a:first-child {
   border-left: none;
+  padding-left: none;
+}
+.contact-info a:last-child {
+  paddingright: none;
 }
 @media (max-width: 550px) {
   .contact-info a {
