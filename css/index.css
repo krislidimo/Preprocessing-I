@@ -215,7 +215,7 @@ header nav a:first-child {
   padding-left: none;
 }
 .contact-info a:last-child {
-  paddingright: none;
+  padding-right: none;
 }
 @media (max-width: 550px) {
   .contact-info a {
