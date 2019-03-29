@@ -118,20 +118,25 @@ header {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	margin-top: 3rem;
+
+	h1 {
+		margin-top: 3rem;
+		margin-bottom: 2rem;
+	}
 
 	nav {
 		display: flex;
-		justify-content: space-around;
+		justify-content: center;
 		width: 96%;
-		padding: 2rem 0;
+		padding-bottom: 1.5rem;
 		border-bottom: 3px solid black;
 
 		a {
 			text-decoration: none;
 			font-size: 1.8rem;
 			color: black;
-			padding: 0 10%;
+			text-align: center;
+			width: 24%;
 			border-left: 1px solid black;
 
 			&:hover {
@@ -149,10 +154,6 @@ header {
 	justify-content: center;
 	margin: .3rem 0;
 
-	p {
-		margin: 0 1%;
-	}
-
 	a {
 		padding: 0 1%;
 		border-left: 1px solid black;
@@ -162,7 +163,7 @@ header {
 			padding-left: none;
 		}
 		&:last-child {
-			padding right: none;
+			padding-right: none;
 		}
 
 	}
@@ -172,7 +173,6 @@ header {
 			font-size: 1.4rem;
 		}
 	}
-
 }
 
 .banner {
